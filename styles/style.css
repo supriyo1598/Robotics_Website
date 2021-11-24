@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 14px 24px;
+  background-color: #f9f9f9;
+  border: 1px solid #f9f9f9;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+  -webkit-transition: background 800ms,color 800ms,border 600ms;
+  transition: background 800ms,color 800ms,border 600ms;
+}
+
+.btn:hover {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 24px 0;
+}
+
+nav .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .container .menu a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-left: 18px;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  background: url(../img/banner-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .container {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #fff;
+}
+
+.main .container .mainInfo h2 {
+  font-size: 68px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.main .container .mainInfo p {
+  margin-top: 10px;
+}
+
+.main .container .mainInfo .btn {
+  margin-top: 20px;
+}
+
+.products {
+  width: 100%;
+  padding: 80px 0;
+}
+
+.products .title {
+  text-align: center;
+}
+
+.products .title h2 {
+  font-size: 34px;
+}
+
+.products .title p {
+  font-size: 14px;
+  color: #777;
+  margin: 13px 0 0;
+}
+
+.products .container {
+  padding-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.products .container .card {
+  max-width: 23%;
+  -webkit-box-shadow: 0px 10px 30px rgba(212, 150, 255, 0.2);
+          box-shadow: 0px 10px 30px rgba(212, 150, 255, 0.2);
+}
+
+.products .container .card:hover .cardInfo .btn {
+  background: -webkit-gradient(linear, left bottom, left top, from(#828fff), to(#d496ff));
+  background: linear-gradient(0deg, #828fff 0%, #d496ff 100%);
+  color: #fff;
+}
+
+.products .container .card .cardBg {
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 26px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.products .container .card .cardInfo {
+  text-align: center;
+  padding: 18px;
+  background: #f9f9f9;
+}
+
+.products .container .card .cardInfo p {
+  margin: 13px 0;
+  color: #777;
+  line-height: 1.5;
+}
+
+.products .container .card .cardInfo .btn {
+  background: #fff;
+  color: #000;
+  -webkit-transition: none;
+  transition: none;
+}
+
+.connect {
+  width: 100%;
+}
+
+.connect .container {
+  max-width: 100%;
+}
+
+.connect .container .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 60px 0;
+}
+
+.connect .container .card .connectBg {
+  width: 100%;
+  max-width: 50%;
+  height: 500px;
+  background: url("../img/about-img.png") no-repeat center/cover;
+}
+
+.connect .container .card .connectInfo {
+  max-width: 50%;
+  padding: 0 26px;
+}
+
+.connect .container .card .connectInfo h2 {
+  font-size: 36px;
+}
+
+.connect .container .card .connectInfo p {
+  color: #777;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.connect .container .card .connectInfo p:first-of-type {
+  margin: 16px 0;
+  color: #000;
+  line-height: 1;
+}
+
+.connect .container .card .connectInfo .btn {
+  margin-top: 14px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#828fff), to(#d496ff));
+  background: linear-gradient(0deg, #828fff 0%, #d496ff 100%);
+  color: #fff;
+  border: 1px solid transparent;
+  padding: 14px 34px;
+}
+
+.connect .container .card .connectInfo .btn:hover {
+  color: #8a90ff;
+  background: #fff;
+  border: 1px solid #8a90ff;
+}
+
+.connect .container .second {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  width: 100%;
+  padding: 60px 150px 100px 150px;
+}
+
+.connect .container .second .contactInfo {
+  max-width: 50%;
+}
+
+.connect .container .second .connectBg {
+  height: 320px;
+  background: url("../img/video-bg.jpg") no-repeat cover/center;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 50%;
+}
+
+.connect .container .second .connectBg i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */

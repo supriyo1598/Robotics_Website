@@ -1,0 +1,220 @@
+
+
+$wt:#fff;
+$bl:#000;
+$grey:#777;
+$greybg:#f9f9f9;
+$iconbg:#111;
+$bdc:#eee;
+$blue:#8a90ff;
+$boxshadow:0px 10px 30px rgba(212,150,255,0.2);
+$gradient:linear-gradient(0deg,#828fff 0%,#d496ff 100%);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.btn{
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 14px 24px;
+    background-color: $greybg;
+    border: 1px solid $greybg;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius:4px ;
+    transition: background 800ms,color 800ms,border 600ms;
+    &:hover{
+        background: transparent;
+        border: 1px solid $wt;
+        color: $wt;
+    }
+}
+nav{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 24px 0;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .menu{
+            a{
+                text-decoration: none;
+                color: $wt;
+                text-transform: uppercase;
+                font-size: 14px;
+                margin-left: 18px;
+            }
+        }
+    }
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    background: url(../img/banner-bg.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    .container{
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: $wt;
+        .mainInfo{
+            h2{
+                font-size: 68px;
+                font-weight: 300;
+                line-height: 1.2;
+            }
+           p{
+               margin-top: 10px;
+           }
+           .btn{
+               margin-top: 20px;
+           }
+        }
+    }
+}
+.products{
+    width: 100%;
+    padding: 80px 0;
+    .title{
+        text-align: center;
+        h2{
+            font-size: 34px;
+        }
+        p{
+            font-size: 14px;
+            color: $grey;
+            margin: 13px 0 0;
+        }
+    }
+    .container{
+        padding-top:60px ;
+        display: flex;
+        justify-content: space-between;
+        .card{
+            max-width: 23%;
+            box-shadow: $boxshadow;
+            &:hover{
+                .cardInfo{
+                    .btn{
+                        background: $gradient;
+                        color: $wt;
+                    }
+                }
+            }
+            .cardBg{
+                background: $wt;
+                display: flex;
+                justify-content: center;
+                padding: 26px;
+                border-bottom: 1px solid $bdc;
+                cursor: pointer;
+            }
+            .cardInfo{
+                text-align: center;
+                padding: 18px;
+                background: $greybg;
+                p{
+                    margin: 13px 0;
+                    color: $grey;
+                    line-height: 1.5;
+                }
+                .btn{
+                    background: $wt;
+                    color: $bl;
+                    transition: none;
+                }
+            }
+
+        }
+    }
+}
+.connect{
+    width: 100%;
+    .container{
+        max-width: 100%;
+        .card{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px 0;
+            .connectBg{
+                width: 100%;
+                max-width: 50%;
+                height: 500px;
+                background: url("../img/about-img.png") no-repeat center/cover;
+            }
+            .connectInfo{
+                max-width: 50%;
+                padding: 0 26px;
+                h2{
+                    font-size: 36px;
+                }
+                p{
+                    color: $grey;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 1.6;
+                    &:first-of-type{
+                        margin: 16px 0;
+                        color: $bl;
+                        line-height: 1;
+                    }
+                }
+                .btn{
+                    margin-top: 14px;
+                    background: $gradient;
+                    color: $wt;
+                    border: 1px solid transparent;
+                    padding: 14px 34px;
+                    &:hover{
+                        color: $blue;
+                        background: $wt;
+                        border: 1px solid $blue;
+                    }
+                }
+            }
+        }
+        .second{
+            flex-direction: row-reverse;
+            width: 100%;
+            padding: 60px 150px 100px 150px;
+            .contactInfo{
+                max-width: 50%;
+            }
+            .connectBg{
+                height: 320px;
+                background: url("../img/video-bg.jpg") no-repeat cover/center;
+                position: relative;
+                display: flex;
+                max-width: 50%;
+                i{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    color: $wt;
+                }
+            }
+            
+        }
+
+    }
+}
